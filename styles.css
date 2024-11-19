@@ -1,0 +1,150 @@
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.bg-teal {
+    background-color: #008080 !important;
+}
+
+img {
+    cursor: pointer;
+}
+
+#fullImage {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dark-theme {
+    background-color: #121212; /* Darker background */
+    color: #e0e0e0; /* Lighter text */
+}
+
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme p {
+    color: #e0e0e0; 
+}
+
+a {
+    color: #007bff; 
+}
+
+.dark-theme a {
+    color: #66b3ff; 
+}
+
+button {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme button {
+    background-color: #444;
+    color: white;
+}
+
+.star {
+    font-size: 30px;
+    color: gold;
+    margin: 0 5px;
+}
+
+.accordion {
+    background-color: #f4f4f4;
+}
+
+.dark-theme .accordion {
+    background-color: #333;
+    color: #e0e0e0; 
+}
+
+.dark-theme .accordion-button {
+    background-color: #444;
+    color: #e0e0e0;
+    border-color: #555;
+}
+
+.dark-theme .accordion-button:not(.collapsed) {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+.dark-theme .accordion-item {
+    border-color: #666;
+}
+
+.card {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-theme .card {
+    background-color: #555;
+    color: #e0e0e0;
+    border: 1px solid #666;
+}
+
+.dark-theme .card-header {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+.dark-theme .card-body {
+    background-color: #555;
+    color: #e0e0e0;
+}
+
+.dark-theme .btn {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+.dark-theme .weather-info {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.weather-info {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-theme .weather-info h6 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+.weather-info h6 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.dark-theme .weather-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #e0e0e0;
+}
+.weather-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-teal">
+            <a class="navbar-brand" href="#">Kaz Travel Experts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button id="themeToggle">Сменить тему</button>
+            <button id="timeButton">Показать текущее время</button>
+            <div id="timeDisplay"></div>
+            
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Направления</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" id="logoutButton">Выход</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <section>
+            <h2 class="text-center">Галерея</h2>
+            <select id="filterSelect">
+                <option value="all">Все</option>
+                <option value="city">Город</option>
+                <option value="nature">Природа</option>
+            </select>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <img src="https://avatars.mds.yandex.net/i?id=c3f6a85aef68a2c7277f7a1980380dfeeaed73f4-12729258-images-thumbs&n=13" class="img-fluid gallery-thumbnail" data-category="city" data-full="https://avatars.mds.yandex.net/i?id=c3f6a85aef68a2c7277f7a1980380dfeeaed73f4-12729258-images-thumbs&n=13">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="https://avatars.mds.yandex.net/i?id=94b33bd2b95d631555c51db34136c743c5dd67ba-12463617-images-thumbs&n=13" class="img-fluid gallery-thumbnail" data-category="nature" data-full="https://avatars.mds.yandex.net/i?id=94b33bd2b95d631555c51db34136c743c5dd67ba-12463617-images-thumbs&n=13">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="https://i.pinimg.com/originals/f2/9c/fa/f29cfa0f2d2c977a2f84d146c0cdd868.jpg" class="img-fluid gallery-thumbnail" data-category="city" data-full="https://i.pinimg.com/originals/f2/9c/fa/f29cfa0f2d2c977a2f84d146c0cdd868.jpg">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="https://avatars.mds.yandex.net/i?id=92e30ee00fe037bbff718dc693de9ad4ad6f5aca-12421240-images-thumbs&n=13" class="img-fluid gallery-thumbnail" data-category="nature" data-full="https://avatars.mds.yandex.net/i?id=92e30ee00fe037bbff718dc693de9ad4ad6f5aca-12421240-images-thumbs&n=13">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="https://avatars.mds.yandex.net/i?id=144bd247b223deb5d737453a8a1383f9199a0ddd-5387132-images-thumbs&n=13" class="img-fluid gallery-thumbnail" data-category="nature"data-full="https://avatars.mds.yandex.net/i?id=144bd247b223deb5d737453a8a1383f9199a0ddd-5387132-images-thumbs&n=13">
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <img src="https://avatars.mds.yandex.net/i?id=8d6eec1aab11254c3eb838828e5dc3512386be8e-4901917-images-thumbs&n=13" class="img-fluid gallery-thumbnail" data-category="nature" data-full="https://avatars.mds.yandex.net/i?id=8d6eec1aab11254c3eb838828e5dc3512386be8e-4901917-images-thumbs&n=13">
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <img id="fullImage" src="" alt="Полное изображение" class="img-fluid" style="display: none;">
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center mt-4">
+        <p>2024 Туризм. Alan Alina Chingis.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+    
+</body>
+</html>

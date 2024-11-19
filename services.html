@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .accordion-content {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-teal">
+            <a class="navbar-brand" href="#">Kaz Travel Experts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button id="themeToggle">Сменить тему</button>
+            
+            <button id="timeButton">Показать текущее время</button>
+            <div id="timeDisplay"></div>
+            
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Направления</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Выход</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <section>
+            <h2 class="text-center">Наши услуги</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="https://avatars.mds.yandex.net/i?id=32000fa3abc0461c3cb66df642dc22b9138ebeb4-5105957-images-thumbs&n=13" class="card-img-top" alt="Консультации по путешествиям">
+                        <div class="card-body">
+                            <h5 class="card-title accordion-header" data-toggle="collapse" data-target="#service1" aria-expanded="false" aria-controls="service1">
+                                Консультации по путешествиям
+                            </h5>
+                            <div id="service1" class="collapse accordion-content">
+                                <p class="card-text">Получите советы по выбору направления и планированию поездки.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="https://avatars.mds.yandex.net/i?id=8df10f87e95cfe364f867fd8e68f7b7d72ab8304-10071482-images-thumbs&n=13" class="card-img-top" alt="Бронирование отелей">
+                        <div class="card-body">
+                            <h5 class="card-title accordion-header" data-toggle="collapse" data-target="#service2" aria-expanded="false" aria-controls="service2">
+                                Бронирование отелей
+                            </h5>
+                            <div id="service2" class="collapse accordion-content">
+                                <p class="card-text">Мы поможем вам найти лучшие предложения по отелям.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="https://avatars.mds.yandex.net/i?id=385dc6a404072f85be22039c935f0c49543fe8b5-5585452-images-thumbs&n=13" class="card-img-top" alt="Экскурсионные туры">
+                        <div class="card-body">
+                            <h5 class="card-title accordion-header" data-toggle="collapse" data-target="#service3" aria-expanded="false" aria-controls="service3">
+                                Экскурсионные туры
+                            </h5>
+                            <div id="service3" class="collapse accordion-content">
+                                <p class="card-text">Откройте для себя культуру и достопримечательности с нашими турами.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <h2 class="text-center">Часто задаваемые вопросы</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                Как сделать бронирование?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faq1" class="collapse show" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Для бронирования, пожалуйста, свяжитесь с нашей командой через контактную форму на сайте.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                Какие способы оплаты доступны?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faq2" class="collapse" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Мы принимаем кредитные карты, PayPal и банковские переводы.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                Можно ли отменить бронирование?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faq3" class="collapse" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Да, отменить бронирование можно за 24 часа до начала тура.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center mt-4">
+        <p>2024 Туризм. Команда: Имя Alan, Имя Alina, Имя Chingis.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>  
+<html lang="ru">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Главная</title>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">  
+    <link rel="stylesheet" href="styles.css">  
+</head>  
+<body>  
+    <header>  
+        <nav class="navbar navbar-expand-lg navbar-light bg-teal">  
+            <a class="navbar-brand" href="#">Kaz Travel Experts</a>  
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">  
+                <span class="navbar-toggler-icon"></span>  
+            </button> 
+            <button id="themeToggle" class="btn btn-light">Сменить тему</button>
+            <button id="timeButton" class="btn btn-light">Показать текущее время</button>
+            <div id="timeDisplay" class="ml-2"></div>
+              <!-- Элемент для приветствия -->
+        <span id="greeting" class="ml-3"></span>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">  
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Направления</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" id="logoutButton">Выход</a></li>
+                </ul> 
+            </div>  
+        </nav>  
+    </header> 
+
+    <main class="container mt-4">
+        <h1 class="text-center">Добро пожаловать в Kaz Travel Experts</h1>
+
+        <div id="carouselExampleIndicators" class="carousel slide mt-4" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://img.gazeta.ru/files3/700/13525700/Depositphotos_7145495_xl-2015-pic_32ratio_900x600-900x600-1980.jpg" class="d-block w-100" alt="Изображение 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://i.pinimg.com/736x/22/4f/82/224f8208a1c9f3cfaa0bd18fe3b55955.jpg" class="d-block w-100" alt="Изображение 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://avatars.mds.yandex.net/i?id=6637f5b6cba198d1d4142e6de4f49e086e4e119d-9863167-images-thumbs&n=13" class="d-block w-100" alt="Изображение 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Предыдущий</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Следующий</span>
+            </a>
+        </div>
+
+        <!-- Звездочки -->
+        <div class="text-center mt-4">
+            <h2>Оцените наш сервис</h2>
+            <div class="star-rating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center mt-4">
+        <p>2024 Туризм. Alan Alina Chingis.</p>
+    </footer>
+
+    <audio id="clickSound" src="click.mp3"></audio>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="registration.js"></script>
+</body>
+</html>

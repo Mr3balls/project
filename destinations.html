@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Направления</title> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="styles.css"> 
+</head> 
+<body> 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-teal">
+            <a class="navbar-brand" href="#">Kaz Travel Experts</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button id="themeToggle">Сменить тему</button>
+            <button id="timeButton">Показать текущее время</button>
+            <div id="timeDisplay"></div>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Направления</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Галерея</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                    <li class="nav-item"><a class="nav-link" id="logoutButton">Выход</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4"> 
+        <section> 
+            <h2 class="text-center">Популярные направления для отдыха</h2> 
+            <div class="row"> 
+                <div class="col-lg-6 mb-4"> 
+                    <div class="card"> 
+                        <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_6617959ffa434e704bc6b850_661797262b574d72fb68be2f/scale_1200" class="card-img-top" alt="Мальдивы"> 
+                        <div class="card-body"> 
+                            <h5 class="card-title">Мальдивы</h5> 
+                            <p class="card-text">Рай для любителей пляжного отдыха и подводного мира.</p> 
+                            <!-- Блок с погодой для Мальдив -->
+                            <div class="weather-info">
+                                <h6 id="maldivesWeatherTitle">Погода на Мальдивах</h6>
+                                <p id="maldivesWeatherDescription"></p>
+                                <p id="maldivesTemperature"></p>
+                            </div>
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="col-lg-6 mb-4"> 
+                    <div class="card"> 
+                        <img src="https://static.tildacdn.com/tild3835-3264-4562-b263-333337306232/683.jpg" class="card-img-top" alt="Бали"> 
+                        <div class="card-body"> 
+                            <h5 class="card-title">Бали, Индонезия</h5> 
+                            <p class="card-text">Знаменит своими живописными пляжами и культурными достопримечательностями.</p> 
+                            <!-- Блок с погодой для Бали -->
+                            <div class="weather-info">
+                                <h6 id="baliWeatherTitle">Погода на Бали</h6>
+                                <p id="baliWeatherDescription"></p>
+                                <p id="baliTemperature"></p>
+                            </div>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+
+            <div class="row"> 
+                <div class="col-lg-4 mb-4"> 
+                    <div class="card"> 
+                        <img src="https://cdn.culture.ru/images/199ca5df-f619-5e8d-a6ab-ef1cb668af79" class="card-img-top" alt="Париж"> 
+                        <div class="card-body"> 
+                            <h5 class="card-title">Париж, Франция</h5> 
+                            <p class="card-text">Город любви и романтики с его знаменитыми достопримечательностями.</p> 
+                            <!-- Блок с погодой для Парижа -->
+                            <div class="weather-info">
+                                <h6 id="parisWeatherTitle">Погода в Париже</h6>
+                                <p id="parisWeatherDescription"></p>
+                                <p id="parisTemperature"></p>
+                            </div>
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="col-lg-4 mb-4"> 
+                    <div class="card"> 
+                        <img src="https://i.pinimg.com/736x/ff/0b/41/ff0b4140b1c4375d99050b01676cf447.jpg" class="card-img-top" alt="Токио"> 
+                        <div class="card-body"> 
+                            <h5 class="card-title">Токио, Япония</h5> 
+                            <p class="card-text">Мегаполис, где традиция встречается с современностью.</p> 
+                            <!-- Блок с погодой для Токио -->
+                            <div class="weather-info">
+                                <h6 id="tokyoWeatherTitle">Погода в Токио</h6>
+                                <p id="tokyoWeatherDescription"></p>
+                                <p id="tokyoTemperature"></p>
+                            </div>
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="col-lg-4 mb-4"> 
+                    <div class="card">
+                        <img src="https://avatars.mds.yandex.net/i?id=362180cf4a8dabfa8b9fdb3bb4344699_l-5205265-images-thumbs&n=13" class="card-img-top" alt="Барселона"> 
+                        <div class="card-body"> 
+                            <h5 class="card-title">Барселона, Испания</h5> 
+                            <p class="card-text">Город, известный своей архитектурой Гауди.</p> 
+                            <!-- Блок с погодой для Барселоны -->
+                            <div class="weather-info">
+                                <h6 id="barcelonaWeatherTitle">Погода в Барселоне</h6>
+                                <p id="barcelonaWeatherDescription"></p>
+                                <p id="barcelonaTemperature"></p>
+                            </div>
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </section> 
+    </main> 
+
+    <footer class="text-center mt-4"> 
+        <p>2024 Туризм. Alan Alina Chingis.</p>
+    </footer> 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="script.js"></script>
+    <script src="weather.js"></script> <!-- Подключаем новый файл -->
+</body> 
+</html>
