@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         star.addEventListener("click", () => {
             const rating = star.dataset.value;
             alert(`Вы оценили сервис на ${rating} звезды!`);
-            const sound = new Audio("C:/Users/User/Desktop/htmlweb/sound/7ddf02d658682f1.mp3"); // Замените на путь к вашему звуку
+            const sound = new Audio("sound/7ddf02d658682f1.mp3"); 
             sound.play();
         });
     });
